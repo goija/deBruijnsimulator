@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>de Bruijn S/E/P color simulator</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main>
+    <section class="panel">
+      <h1>de Bruijn S/E/P color simulator</h1>
+      <div class="status-line"><div id="state">Loading...</div><div id="rIndicator" class="r-indicator">R</div></div>
+      <div class="legend">
+        <span><i class="dot zero"></i>0 = red</span>
+        <span><i class="dot one"></i>1 = blue</span>
+        <span><i class="dot random-dot"></i>random mode</span>
+      </div>
+      <div class="controls">
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button>
+        <button id="randomBtn">Random S/E</button>
+        <button id="autoBtn">Autoplay</button>
+        <button id="hexBtn">Hexagram</button>
+        <button id="orientBtn">Orientation</button>
+        <button id="trailBtn">Trail</button>
+        <button id="fadeBtn">Fade</button>
+        <button id="resetCounterBtn">Reset counter</button>
+      </div>
+    </section>
+
+    <section id="overlapMeterBox" class="panel overlap-meter-box">
+      <div class="overlap-meter-title">Overlap density</div>
+      <div class="overlap-meter-line">
+        <div id="overlapMeterText" class="overlap-meter-text">0/6</div>
+        <div class="overlap-bar"><div id="overlapMeterFill" class="overlap-fill"></div></div>
+        <div id="overlapMeterString" class="overlap-meter-string">------</div>
+        <div id="realOverlapIndicator" class="real-overlap-indicator off">EDGE</div>
+      </div>
+    </section>
+
+    <section class="layout">
+      <div class="scope">
+        <div id="ringE" class="ring ringE"></div>
+        <div id="ringS" class="ring ringS"></div>
+        <div id="pstrip" class="pstrip"></div>
+      </div>
+    </section>
+
+    <section class="panel below-panel">
+      <h2>XOR blend preview</h2>
+      <div id="blendPanel" class="blend"></div>
+    </section>
+
+    <section class="panel below-panel">
+      <h2>History trail</h2>
+      <div id="historyPanel" class="history"></div>
+    </section>
+
+    <section id="hexBox" class="panel below-panel hex-box hidden" aria-hidden="true">
+      <h2>Hexagram overlay</h2>
+      <div id="hexPanel"></div>
+    </section>
+  </main>
+
+  <script src="assets/simulator.js"></script>
+</body>
+</html>

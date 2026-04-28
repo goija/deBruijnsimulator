@@ -1,0 +1,17 @@
+metric,value
+schema,debruijn-sep-64x64-analysis-v1
+generated_at,2026-04-28T07:41:35.201592+00:00
+n_records,4096
+unique_S,64
+unique_E,64
+unique_P,64
+unique_overlap_strings,729
+p_entropy_bits,6.0
+overlap_entropy_bits,9.0
+overlap_score_counts,"{""0"": 64, ""1"": 384, ""2"": 960, ""3"": 1280, ""4"": 960, ""5"": 384, ""6"": 64}"
+mean_overlap_score,3.0
+mean_overlap_density,0.5
+real_overlap_count,1792
+real_overlap_rate,0.4375
+top_p_counts,"{""000000"": 64, ""000001"": 64, ""000010"": 64, ""000100"": 64, ""001000"": 64, ""010000"": 64, ""100001"": 64, ""000011"": 64, ""000110"": 64, ""001100"": 64}"
+top_overlap_counts,"{""------"": 64, ""----0-"": 32, ""---0--"": 32, ""--0---"": 32, ""-0----"": 32, ""0-----"": 32, ""-----0"": 32, ""-----1"": 32, ""----1-"": 32, ""---1--"": 32}"

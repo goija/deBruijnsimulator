@@ -1,31 +1,28 @@
-# de Bruijn S/E/P v9.8 — hidden hexagram box + remembered UI state
+# Web simulator v9.8
 
-Generated: 2026-04-27T07:40:32
+Open `index.html` directly in a browser.
 
-Updates from v8.5:
+New:
+- Hexagram box is hidden entirely when hexagram mode is off.
+- No blank space remains when hidden.
+- Hexagram box animates open when turned on.
+- UI settings are remembered using localStorage.
 
-- Hexagram overlay box is not displayed when hexagram mode is off.
-- No empty vertical space remains.
-- Box opens with a small animation.
-- UI state is saved in browser localStorage.
-
-Open:
-
-```text
-web/index.html
-```
-
-The clean mask and current-limiting note are retained.
+Remembered settings:
+- random mode
+- autoplay
+- hexagram mode
+- orientation
+- trail
+- fade
+- P labels
+- XOR guides
 
 
-## v9.8 history fix
-
-Generated: 2026-04-27T07:47:03
-
-The history trail now uses a monotonic `historyCounter`.
-
-The display still keeps only the newest 40 entries internally for performance, but
-the visible counter continues indefinitely: #41, #42, #43, etc.
+History fix:
+- The history buffer still trims old entries.
+- The visible iteration number no longer depends on buffer length.
+- The counter keeps increasing after 40 updates.
 
 
 ## v9.8 overlap line

@@ -1,0 +1,8 @@
+{
+  "schema": "debruijn-sep-output-v1",
+  "cycle": "0000001000011000101000111001001011001101001111010101110110111111",
+  "records": [
+    {"iteration":1,"timestamp":"2026-04-28T00:00:00Z","idxS":0,"idxE":0,"S":"000000","E":"000000","P":"000000","overlap":"000000","overlap_score":6,"overlap_density":1.0,"real_overlap":false,"random_mode":false,"autoplay":false,"hex_mode":false,"orientation":"top-to-bottom"},
+    {"iteration":2,"timestamp":"2026-04-28T00:00:01Z","idxS":1,"idxE":17,"S":"000001","E":"100010","P":"100011","overlap":"-----1","overlap_score":1,"overlap_density":0.1666666667,"real_overlap":true,"random_mode":true,"autoplay":false,"hex_mode":false,"orientation":"top-to-bottom"}
+  ]
+}

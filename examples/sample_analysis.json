@@ -1,0 +1,3 @@
+{
+  "note": "Run python3 analysis/analyze_output.py examples/sample_output.json --out examples/sample_analysis.json to regenerate a full report."
+}

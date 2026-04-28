@@ -1,0 +1,12 @@
+{
+  "name": "debruijn-sep-simulator",
+  "version": "1.0.0",
+  "description": "Standalone browser simulator for de Bruijn S/E/P rings with XOR, overlap, export, and statistical analysis tools.",
+  "scripts": {
+    "start": "python3 -m http.server 8000 -d web",
+    "simulate": "python3 analysis/generate_simulated_output.py --steps 1000 --mode random --out examples/sample_output.json",
+    "analyze": "python3 analysis/analyze_output.py examples/sample_output.json --out examples/sample_analysis.json"
+  },
+  "license": "MIT",
+  "private": true
+}
