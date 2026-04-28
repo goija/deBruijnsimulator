@@ -1,0 +1,35 @@
+{
+  "schema": "debruijn-sep-anomaly-report-v1",
+  "overall": {
+    "n": 500,
+    "mean_overlap_score": 4.69,
+    "mean_overlap_z": 30.855037406124364,
+    "overlap_score_counts": {
+      "0": 4,
+      "1": 13,
+      "2": 49,
+      "3": 79,
+      "4": 57,
+      "5": 19,
+      "6": 279
+    },
+    "overlap_class_counts": {
+      "-": 182,
+      "real": 69,
+      "sreal": 116,
+      "ereal": 133
+    },
+    "overlap_score_chisq": 9565.158399999998,
+    "overlap_class_chisq": 102.33955555555555,
+    "p_entropy_bits": 3.5307499563757334,
+    "p_entropy_deficit": 2.4692500436242666,
+    "unique_pairs": 280,
+    "flags": [
+      "mean_overlap_z_gt_3",
+      "overlap_score_chi_high",
+      "overlap_class_chi_high",
+      "p_entropy_deficit"
+    ],
+    "is_anomaly": true
+  }
+}
